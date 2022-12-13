@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600italic,700,900,400italic,600|Merriweather:700,900");
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wildcard-screen {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.icons8-donate-ios-glyph-96-1 {
+  border: 1px none;
+  height: 28px;
+  margin-left: 35px;
+  margin-top: 3px;
+  width: 28px;
+}
+
+.overlap-group3 {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.line-10 {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 136px;
+  width: 100%;
+}
+
+.rectangle-19 {
+    background-color: var(--white);
+    border: 1px none;
+    box-shadow: 0px 2px 8px 2px 
+  #00000040;
+    height: 87px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+
+.frame-1 {
+  height: 299px;
+  left: 1297px;
+  position: absolute;
+  top: 363px;
+  width: 143px;
+}
+
+.frame {
+  height: 110px;
+  left: 45px;
+  position: absolute;
+  top: 108px;
+  width: 109px;
+}
+
+.overlap-group2 {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  left: 406px;
+  min-height: 108px;
+  padding: 21px 63px;
+  position: absolute;
+  top: 370px;
+  width: 360px;
+}
+
+.updated-status {
+    align-self: center;
+  color: var(--black);
+  font-family: var(--font-family-raleway);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-top: 2px;
+}
+
+.group-39 {
+  align-items: flex-start;
+  display: flex;
+}
+
+.group-37 {
+  display: flex;
+  position: absolute;
+  left:200px;
+}
+
+.icons8 {
+  height: 40px;
+  object-fit: cover;
+  width: 40px;
+}
+
+.coins-100 {
+  letter-spacing: 0;
+  line-height: 41.4px;
+  margin-bottom: 13px;
+  margin-left: 2px;
+  min-height: 32px;
+  font-weight: bold;
+  white-space: nowrap;
+  width: 155px;
+}
+
+.group-38 {
+  display: flex;
+  position: absolute;
+  left:50px;
+
+}
+
+.co2-456 {
+  letter-spacing: 0;
+  line-height: 41.4px;
+  margin-bottom: 9px;
+  margin-left: 13px;
+  min-height: 32px;
+  font-weight: bold;
+  white-space: nowrap;
+  width: 130px;
+}
+
+.title {
+  color: var(--black);
+  font-family: var(--font-family-merriweather);
+  font-size: var(--font-size-xl);
+  font-weight: 900;
+  left: 156px;
+  letter-spacing: 0;
+  line-height: 62.1px;
+  position: absolute;
+  top: 108px;
+  white-space: nowrap;
+  width: 364px;
+}
+
+.group-50 {
+  align-items: center;
+  border: 1px none;
+  display: flex;
+  height: 344px;
+  left: 84%;
+  padding: 0 0px;
+  position: absolute;
+  top: 141px;
+}
+
+.overlap-group1 {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/632173ebbea0b51cbb564985/releases/6321742d75704aba0f90e43b/img/image-9-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 204px;
+  padding: 0px!important;
+}
+
+.image-10 {
+  height: 344px;
+  object-fit: none;
+  width: 140px;
+}
+
+.phase-1-2022-30 {
+    left: 56px;
+    letter-spacing: 0;
+    line-height: 25.9px;
+    position: absolute;
+    top: 60px;
+    white-space: nowrap;
+  }
+
+.overlap-group {
+  height: 324px;
+  left: 156px;
+  position: absolute;
+  top: 171px;
+  width: 436px;
+}
+
+.congratulations-you {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 636px;
+}
+
+.span1 {
+  color: var(--black);
+  font-family: var(--font-family-raleway);
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+}
+
+.icons8-donate-ios-glyph-96-2 {
+  height: 48px;
+  left: 417px;
+  object-fit: cover;
+  position: absolute;
+  top: 276px;
+  width: 48px;
+}
+/* Variables */
+
+
+:root {
+    --black
+  : 
+  rgba(0, 0, 0, 1);
+    --supernova
+  : 
+  rgba(253, 207, 10, 1);
+    --white
+  : 
+  rgba(255, 255, 255, 1);
+  
+    --font-size-s
+  : 15px;
+    --font-size-m
+  : 19px;
+    --font-size-l
+  : 23px;
+    --font-size-xl
+  : 27px;
+    --font-size-xxl
+  : 31px;
+  
+    --font-family-merriweather
+  : "Merriweather";
+    --font-family-raleway
+  : "Raleway";
+  }
+  
+  /* Classes */
+  
+  
+  .raleway-semi-bold-black-28px
+   {
+    color: var(--black
+  );
+    font-family: var(--font-family-raleway
+  );
+    font-size: var(--font-size-l
+  );
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .raleway-normal-black-24px
+   {
+    color: var(--black
+  );
+    font-family: var(--font-family-raleway
+  );
+    font-size: var(--font-size-m
+  );
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .raleway-semi-bold-black-20px
+   {
+    color: var(--black
+  );
+    font-family: var(--font-family-raleway
+  );
+    font-size: var(--font-size-s
+  );
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .raleway-semi-bold-black-24px
+   {
+    color: var(--black
+  );
+    font-family: var(--font-family-raleway
+  );
+    font-size: var(--font-size-m
+  );
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .raleway-normal-black-20px
+   {
+    color: var(--black
+  );
+    font-family: var(--font-family-raleway
+  );
+    font-size: var(--font-size-s
+  );
+    font-weight: 400;
+    font-style: normal;
+  }
+  

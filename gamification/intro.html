@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <div class="intro">
+        <img class="group-52" src="telecom opp HS bg right.png" />
+        <img class="frame" src="cloud 1 (top right homescreen).png" />
+        <h1>Introduction</h1>
+        <p class="intro">
+        Are you a telecom service provider who is still 
+        working with <b>Diesel Generators</b>?  Did you know that there are various technologies
+        available which can replace the Diesel Generators which in turn can help us to reduce 
+        <b>Carbon Emissions</b> which are one of the major sources of <b>GHG emissions in Telecom sector</b> ?</p>
+        <p class="play">
+        Play this game to see if you can reach net zero by the year 2050. 
+        Let's begin with building a replica of your industrial site.</p>
+        <h3 class="one">What is the average number of diesel generators installed at your site ? </h3>
+            <input class="input-one" oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');" id="dgi" type="number">
+        <h3 class="two">What is the average power consumption of your grid in kWh/day ?</h3>
+            <input class="input-two" id="power" type="number">
+           <button onclick="setpass()">Get carbon emission analysis</button>
+        
+    </div>
+<script>
+   function setpass(){
+    var x=document.getElementById("dgi").value
+    var y=document.getElementById("power").value
+    localStorage.setItem('x', x);
+    localStorage.setItem('y', y);
+    location.href = "finaltelecomintro.html";
+    };
+
+</script>
+</body>
+</html>
