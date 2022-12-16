@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="phase1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type = "text/javascript" >  
+      function preventBack() { window.history.forward(); }  
+      setTimeout("preventBack()", 0);  
+      window.onunload = function () { null };  
+  </script> 
+<style>
+
+.thumb span { 
+	position:absolute;
+	visibility:hidden;
+}
+.thumb:hover, .thumb:hover span { 
+	visibility:visible;
+	top:0;
+	left:200px; 
+	z-index:1;
+}
+</style>
+</head>
+<body>
+  
+    <div class="question-screen-1screen">
+      
+        <div class="overlap-group5">
+          <div class="overlap-group4">
+            <img class="group-34" src="coloured questino bg.png" />
+            <div class="frame-57">
+              <div class="global-temperatures">
+                A carbon credit is a monetary allocation for the reduction of CO2 emissions in the atmosphere. You can choose the following options to make up for carbon dioxide emissions that come from your company.
+              </div>
+              <h1 class="what-greener-alterna">
+                You will double your investment if your choices take off.
+              </h1>
+            </div>
+            <div class="frame-64">
+              <div class="group">
+                <div class="overlap-group1" onclick="option2()">
+                  <div class="component-2">
+                    <img class="line-7" src="line-7-2.svg" />
+                    <div class="group-30">
+                      <div class="group-28"></div>
+                      <div class="ios-glyph-container">
+                        <div class="icons8-donate-ios-glyph-96-1"></div>
+                        <img class="icons8-heating-ios-glyph-96-1" src="heat icon.png" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame-60">
+                    <div class="replace-your-deisel raleway-normal-black-20px">
+                      Plant thousands of hectares of native forest by 2050
+                    </div>
+                    <div class="group-31">
+                      <div class="group-28-1">
+                        <div class="number-1 raleway-semi-bold-black-28px" id="option2a" value="12">12</div>
+                      </div>
+                      <div class="group-29">
+                        <div class="icons8-donate-ios-glyph-96-1-1"></div>
+                        <div class="number raleway-semi-bold-black-28px" id="option2b" value="12">12</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-65">
+              <div class="group">
+                <div class="group-container" onclick="option3()">
+                  <div class="overlap-group1-1">
+                    <div class="component-2">
+                      <img class="line-7" src="line-7-2.svg" />
+                      <div class="group-30">
+                        <div class="group-28"></div>
+                        <div class="ios-glyph-container">
+                          <div class="icons8-donate-ios-glyph-96-1"></div>
+                          <img class="icons8-heating-ios-glyph-96-1" src="heat icon.png" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="continue-using-deisel-generators raleway-normal-black-20px">
+                      Not interested in carbon credits. Continue with the existing system 
+                    </div>
+                  </div>
+                  <div class="group-32">
+                    <div class="number-2 raleway-semi-bold-black-28px" id="option3a" value="2">2</div>
+                    <div class="group-29-1">
+                      <div class="icons8-donate-ios-glyph-96-1-1"></div>
+                      <div class="number raleway-semi-bold-black-28px" id="option3b" value="2">2</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-63" >
+              <div class="group">
+                <div class="overlap-group1" onclick="option1()">
+                  <div class="component-2">
+                    <img class="line-7" src="line-7-2.svg" />
+                    <div class="group-30">
+                      <div class="group-28"></div>
+                      <div class="ios-glyph-container">
+                        <div class="icons8-donate-ios-glyph-96-1"></div>
+                        <img class="icons8-heating-ios-glyph-96-1" src="heat icon.png" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame-59" >
+                    <div class="replace-your-deisel raleway-normal-black-20px" >
+                      Would you purchase 50 Million <span style="font-weight:bold;" title="A carbon credit is a permit that allows the owner to emit a certain amount of carbon dioxide or other greenhouse gases. One credit permits the emission of one ton of carbon dioxide or the equivalent in other greenhouse gases." >carbon credits</span> 
+                    </div>
+                    <div class="frame-58">
+                      <div class="number-3 raleway-semi-bold-black-28px" id="option1a" value="10">10</div>
+                      <div class="number-4 raleway-semi-bold-black-28px" id="option1b" value="10">10</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rectangle-19"></div>
+            <div class="phase-1-2022-30 raleway-semi-bold-black-20px">Phase 2: 2022-30</div>
+            <img class="line-10" src="line-10-2.svg" />
+          </div>
+          <div class="component-3">
+            <div class="overlap-group3">
+                <canvas id="chart-area" width="500" height="500" />
+ </div>
+              <div class="ellipse-3"></div>
+              <img class="group-1" src="earth-meter-question screens.png" />
+              <div class="frame">
+                <div class="group-28-2">
+                  <img class="icons8" src="coin icon.png" />
+                  <div class="number-5 raleway-semi-bold-black-28px" id="coinn"></div>
+                </div>
+                <div class="group-29-2">
+                  <div class="ios-glyph-container-1">
+                    <div class="icons8-donate-ios-glyph-96-1"></div>
+                    <img class="icons8-heating-ios-glyph-96-1" src="heat icon.png" />
+                  </div>
+                  <div class="number-6 raleway-semi-bold-black-28px" id="heatt"></div>
+                </div>
+              </div>
+            </div>
+            <div class="group-container-1">
+              <div class="group-35">
+                <img class="icons8" src="heat icon.png" />
+                <div class="co2-456 raleway-semi-bold-black-20px">CO2 100</div>
+              </div>
+              <div class="group-36">
+                <img class="icons8" src="coin icon.png" />
+                <div class="coins-100 raleway-semi-bold-black-20px">Coins 100</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+<script>
+  // var randomScalingFactor = function() {
+  //     return Math.round(Math.random() * 100);
+  // };
+  // var randomColorFactor = function() {
+  //     return Math.round(Math.random() * 255);
+  // };
+  var co2=localStorage.getItem('co2');
+var coin=localStorage.getItem('coin');
+var effort=localStorage.getItem('effort');
+if(effort==2){
+    coin=parseInt(coin)-parseInt(10);
+     localStorage.setItem('str', 'oh no!! Your decision has failed to save the earth and led to the increase in total diesel consumption!!');
+     localStorage.setItem('str1', 'DEDUCT 10 Coins');
+}
+else if(effort==4){
+    coin=parseInt(coin)+parseInt(2);
+     localStorage.setItem('str', 'Your decision has made a minor change in diesel consumption. You are on the right track.. ');
+     localStorage.setItem('str1', 'Keep it Up!');
+}
+else if(effort==8){
+    coin=parseInt(coin)+parseInt(5);
+     localStorage.setItem('str', 'Good Job!! Your decision has made a significant change in diesel consumption. You are on the right track.');
+     localStorage.setItem('str1', 'AWARD 5 COINS');
+}
+
+else{
+    coin=parseInt(coin)+parseInt(10);
+    localStorage.setItem('str', 'Congratulations  !! Your decision has made a major change in diesel consumption. You are on the right track.');
+     localStorage.setItem('str1', 'AWARD 10 COINS');
+}
+  var config = {
+      type: 'doughnut',
+      data: {
+          datasets: [{
+              data: [
+                  co2,
+                  100-co2
+              ],
+                  backgroundColor: [
+                  "#EE6A3E",
+                  "WHITE",
+              ],
+          },{ 
+     weight: 0.5
+     }, {
+              data: [
+                  coin,
+                  100-coin
+              ],
+                  backgroundColor: [
+                  "#FDCF0A",
+                  "WHITE",
+              ],
+          }]
+      },
+      options: {
+          responsive: true,
+          tooltips: {enabled: false},
+        hover: {mode: null},
+        cutoutPercentage: 70,
+        elements: {
+      arc: {
+          borderWidth: 0
+      }
+  }
+      }
+  };
+  
+  var ctx = document.getElementById("chart-area").getContext("2d");
+  var myDoughnut = new Chart(ctx, config);
+  document.getElementById('heatt').innerHTML=co2;
+    document.getElementById('coinn').innerHTML=coin;
+  
+  </script>
+  <script>
+     function option1(){
+      var x = document.getElementById('option1a').getAttribute('value');
+      x=parseInt(coin)-parseInt(x);
+      var y = document.getElementById('option1b').getAttribute('value');
+      y=parseInt(co2)-parseInt(y);
+      localStorage.setItem('coin', x);
+      localStorage.setItem('co2', y);
+      localStorage.setItem('plant', document.getElementById('option1a').getAttribute('value'));
+      location.href = "phase2w1g.html";
+    };
+    function option2(){
+      var x = document.getElementById('option2a').getAttribute('value');
+      x=parseInt(coin)-parseInt(x);
+      var y = document.getElementById('option2b').getAttribute('value');
+      y=parseInt(co2)-parseInt(y);
+      localStorage.setItem('coin', x);
+      localStorage.setItem('co2', y);
+      localStorage.setItem('plant', document.getElementById('option2a').getAttribute('value'));
+      location.href = "phase2w1g.html";
+    };
+    function option3(){
+      var x = document.getElementById('option3a').getAttribute('value');
+      x=parseInt(coin)-parseInt(x);
+      var y = document.getElementById('option3b').getAttribute('value');
+      y=parseInt(co2)-parseInt(y);
+      localStorage.setItem('coin', x);
+      localStorage.setItem('co2', y);
+      localStorage.setItem('plant', document.getElementById('option3a').getAttribute('value'));
+      location.href = "phase2w1g.html";
+    };
+  </script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="intro copy.css">
+</head>
+<script>
+    function codeAddress(){
+    const dg = localStorage.getItem('x');
+    const po = localStorage.getItem('y');
+    var res=((dg*60.57216)+(0.79*po*30*12*0.001)).toFixed(2);
+    document.getElementById('output').innerHTML = res+ " tons of CO<sub>2</sub> every year!";
+    }
+    </script>
+    
+<body onload="codeAddress();">
+    <div class="general-user-intro-screen">
+        <div class="overlap-group2">
+          <div class="overlap-group1">
+            <img
+              class="frame"
+              src="https://anima-uploads.s3.amazonaws.com/projects/632173ebbea0b51cbb564985/releases/6321742d75704aba0f90e43b/img/frame-2@2x.svg"
+            />
+          </div>
+          <div class="overlap-group">
+            <img
+              class="group-26"
+              src="https://anima-uploads.s3.amazonaws.com/projects/632173ebbea0b51cbb564985/releases/6321742d75704aba0f90e43b/img/group-26@1x.svg"
+            />
+            <div class="the-ict-sector-is-now-responsible-for raleway-normal-black-20px">
+                By running the data through our calculations, we estimate<br> that your industrial site is responsible for producing:
+            </div>
+            
+            <div class="about-twice-the-leve raleway-normal-black-20px">
+              <span class="raleway-normal-black-20px" style="font-weight: bold;"
+                >and by the year 2050, the CO2 emissions from your <br>industry will increase by an average of </span
+              ></div>
+            <div class="unless-significant-s raleway-normal-black-20px" style="font-weight: bold;">
+                DON'T WORRY! We have got your back
+            </div>
+           
+            <div class="play-this-game-to-se raleway-normal-black-20px">
+                <span class="raleway-normal-black-20px">Play further know what all options you can invest order to </span
+                ><span class="raleway-semi-bold-black-20px"><br>reach net zero by 2050</span
+                ><span class="raleway-normal-black-20px"
+                  >.<br /><br />Choose wisely, with every right initiative, you will be awarded with coins and with every wrong investment, you will
+                  contribute more towards global warming and hence loose points. Run out entirely and the game will end. Tread carefully!</span
+                >
+              </div>
+            <div class="rectangle-16"></div>
+            <div class="rectangle-17"></div>
+            <div class="x3-to-4-of-global-co2emissions" id="output"></div>
+            <div class="x32">14% &uarr;</div>
+          </div>
+          <img
+            class="line-6"
+            src="https://anima-uploads.s3.amazonaws.com/projects/632173ebbea0b51cbb564985/releases/6321742d75704aba0f90e43b/img/line-6@2x.svg"
+          />
+          <a href="phase1.html"><div class="frame-27">
+            <div class="play">Play</div>
+          </div>
+        </a>
+        </div>
+      </div>
+
+</body>
+
+</html>
